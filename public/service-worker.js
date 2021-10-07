@@ -2,10 +2,11 @@ const APP_PREFIX = 'BudgetTracker-';
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
-  "./index.html",
+  "../index.html",
   "./js/index.js",
   "./js/idb.js",
-  "./css/style.css",
+  "../css/style.css",
+  "../icons/style.css"
   
 ];
 
