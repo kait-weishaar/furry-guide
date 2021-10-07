@@ -8,8 +8,10 @@ fetch("/api/transaction")
   .then(data => {
     // save db data on global variable
     console.log(transactions)
-    transactions = data;
-    console.log(transactions)
+    
+    if(data.length) {
+      transactions = data;
+    }
     populateTotal();
     populateTable();
     populateChart();
