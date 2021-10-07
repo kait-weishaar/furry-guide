@@ -68,7 +68,7 @@ function uploadTransaction() {
             // open one more transaction
             const transaction = db.transaction(['new_transaction'], 'readwrite');
             // access the new_pizza object store
-            const pizzaObjectStore = transaction.objectStore('new_transaction');
+            const transactionObjectStore = transaction.objectStore('new_transaction');
             // clear all items in your store
             transactionObjectStore.clear();
 
